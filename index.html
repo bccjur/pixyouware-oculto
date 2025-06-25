@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Incorporado</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .footer-mask {
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      width: 100%;
+      background: #fff;
+      z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+      .footer-mask {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-wrapper">
+    <iframe src="https://www.youware.com/project/qdjfdd41a6" allowfullscreen></iframe>
+    <div class="footer-mask"></div>
+  </div>
+</body>
+</html>
